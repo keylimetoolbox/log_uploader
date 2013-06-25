@@ -60,7 +60,7 @@ class UploadLogFiles():
         for file in files:
             try:
                 self.download_compress_upload(file, self.bucket_connection)
-            except Exception as e:
+            except Exception, e:
                 print '-' * 10
                 print "Unable to upload file '%s'..." % file
                 print ' '.join(traceback.format_exception(*sys.exc_info()))
