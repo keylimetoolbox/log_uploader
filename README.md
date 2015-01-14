@@ -1,14 +1,14 @@
-Blueprint Log Uploader
-======================
+Keylime Toolbox Log Uploader
+=============================
 
-A python script for for uploading logs to S3 for Blueprint.
+A python script for for uploading logs to S3 for Keylime Tools.
 
 To use, configure the variables in the script file following the comments. Then
 schedule the script to run daily from a server. For example, on a unix-like
 machine you can add a crontab entry or /etc/cron.daily/ file with a single
 line:
 
-    /usr/bin/python blueprint_log_uploader.py
+    /usr/bin/python keylime_log_uploader.py
 
 
 
