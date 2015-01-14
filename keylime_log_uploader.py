@@ -1,11 +1,11 @@
 #! /usr/bin/python
 """
-Module for uploading logs to S3 for Blueprint
+Module for uploading logs to S3 for Keylime Tools.
 
 To use, configure the variables below for your environment and then add this to a
 crontab entry or /etc/cron.daily/ file.
 
-    python blueprint_log_uploader.py
+    python keylime_log_uploader.py
 
 """
 import boto
@@ -27,7 +27,7 @@ AWS_ACCESS_KEY_ID = os.environ['AWS_ACCESS_KEY_ID']
 AWS_SECRET_ACCESS_KEY = os.environ['AWS_SECRET_ACCESS_KEY']
 
 # The bucket we have assigned you
-BUCKET = 'yourbucket.ninebyblue'
+BUCKET = 'yourbucket-keylime'
 
 # A date format specification using strftime format, that will match the dates in your
 # log file names.
